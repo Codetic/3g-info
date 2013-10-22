@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Share Tech';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Share Tech'), local('ShareTech-Regular'), url(sharetech.woff) format('woff');
+}

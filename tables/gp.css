@@ -1,0 +1,13 @@
+body{padding: 0}
+.table{font-size: 16px;}
+.table td{background-color: #E6EDF2;}
+.table tr th{border: 1px solid #FFFFFF;
+height: 43px;
+padding-top: 27px;
+text-align: center;}
+
+.table tr td {text-align:center;border:1px solid #fff;}
+.table td a:hover{text-decoration: none;}
+.table td a:visited{text-decoration: none;}
+
+
