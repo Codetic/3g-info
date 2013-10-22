@@ -1,6 +1,6 @@
  
  @import url(fonts/fonts.css);
-
+html{-webkit-tap-highlight-color: rgba(0,0,0,0);!important; -webkit-tap-highlight-color: transparent;!important;}
  body{padding:0; font-family: 'Share Tech', sans-serif;}
 .home{float:right; position: absolute; right: 10px; top: 5px;height: 85%;}
 .back{float:left; position: absolute; left: 10px; top:5px;height: 85%; }
