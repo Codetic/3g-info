@@ -99,10 +99,17 @@ h6{font-size:10px; padding:0px; font-smooth:always;}
 	/*--------------------------------------------------
 	MAIN LINK PROPERTIES
 	---------------------------------------------------*/
-	a, a:link, a:visited{color:#333; text-decoration:none}
-	a:hover{ color:#666;  text-decoration:none}
-	a img, img{ border:none}
-	
+	a, a:active, a:link, a:visited, a:focus{text-decoration:none; outline: none; color: #000;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);!important; 
+    -webkit-tap-highlight-color: transparent;!important;}
+	a:hover{text-decoration:none; outline: none; color: #000
+	-webkit-tap-highlight-color: rgba(0,0,0,0);!important; 
+    -webkit-tap-highlight-color: transparent;!important;}
+	a img, img:active, img:focus, img:link, img:visited{border:none; outline: none; text-decoration:none;}
+	-webkit-tap-highlight-color: rgba(0,0,0,0);!important; 
+    -webkit-tap-highlight-color: transparent;!important; 
+	 /* For some Androids */
+	}
 /*--------------------------------------------------
 LIST STYLES
 ---------------------------------------------------*/
@@ -147,18 +154,6 @@ BUTTONS
 .right.leon, .right.leon:visited { text-align:right; }
 
 /* Colors */
-.green.leon, .green.leon:visited { background-color: #91bd09; }
-.green.leon:hover { background-color: #749a02; }
-.blue.leon, .blue.leon:visited { background-color: #2daebf; }
-.blue.leon:hover { background-color: #007d9a; }
-.red.leon, .red.leon:visited { background-color: #e33100; }
-.red.leon:hover { background-color: #872300; }
-.magenta.leon, .magenta.leon:visited { background-color: #a9014b; }
-.magenta.leon:hover { background-color: #630030; }
-.orange.leon, .orange.leon:visited { background-color: #ff5c00; }
-.orange.leon:hover { background-color: #d45500; }
-.yellow.leon, .yellow.leon:visited { background-color: #ffb515; }
-.yellow.leon:hover { background-color: #fc9200; }
 
 /*--------------------------------------------------
 TEXT AREA
