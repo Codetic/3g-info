@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.css">
     <link rel="stylesheet" type="text/css" href="table.css">
+    <link rel="stylesheet" type="text/css" href="loader.css">
+    <script type="text/javascript" src="jquery-1.6.min.js"></script>
 
         <style type="text/css">
                 .table tr td span{color:#C5161D; }
@@ -15,6 +17,11 @@
         </style>
 </head>
 <body>
+    <!-- Preloader -->
+        <div id="preloader">
+            <div id="status">&nbsp;</div>
+        </div>
+    <!-- Preloader -->
      <div class="package-header">
     <h3>Robi WiFi</h3>
     <a href="../index.html"><img class="home" src="home.png"></a>
@@ -88,5 +95,15 @@
 
     <p class="alert alert-info" style="padding:3%">To subscribe, purchase a package by sending the keyword (e.g. "W2") to "16311" and in reply. </br>Receive a username and password to log into the WiFi network and start browsing. </br> Robi introduces new Wifi services across select areas in Dhaka! Subscribers can enjoy e-mail, instant messaging, high speed browsing, social networking, using apps etc. via their Wi-Fi capable devices (i.e. mobile, laptop, Tablet) with speed up to 1 Mbps. </p>
 
+    <!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+    //]]>
+</script>
 </body>
 </html>

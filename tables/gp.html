@@ -6,9 +6,15 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.css">
     <link rel="stylesheet" type="text/css" href="table.css">
+    <link rel="stylesheet" type="text/css" href="loader.css">
+    <script type="text/javascript" src="jquery-1.6.min.js"></script>
 
 </head>
 <body>
+    <!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
 
     <div class="package-header">
     <h3>GP Packages</h3>
@@ -22,6 +28,17 @@
     </div>
 
     <div><img style="display: block; margin:0 auto" src="gp-3g.jpg"></div>
+
+    <!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+    //]]>
+</script>
 
 </body>
 </html>

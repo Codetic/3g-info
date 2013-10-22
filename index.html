@@ -32,6 +32,7 @@
 <link rel="stylesheet" href="assets/css/icons.css" type="text/css">
 <link rel="stylesheet" href="assets/css/add2home.css" type="text/css"> <!--Iphone Bubble-->
 <!-- / Styles -->
+<link rel="stylesheet" type="text/css" href="tables/loader.css">
 
 <!-- Javascripts -->
 <script src="assets/js/jquery.1.7.1.min.js"></script>
@@ -43,6 +44,12 @@
 </head>
 
 <body>
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="status">&nbsp;</div>
+        </div>
+    <!-- Preloader -->
+
 <!-- Landscpae Mode Container -->
 <div class="container-landscape">Please turn your mobile device to portrait mode for best view this App.</div>
 <!-- / Landscape Mode Container -->
@@ -113,8 +120,18 @@
 <!-- / Touch hide JS -->
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-
-
+ <!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+    //]]>
+</script>
+ <!-- Preloader -->
+ 
 </body>
 
 </html>

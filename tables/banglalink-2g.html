@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" type="text/css" href="table.css">
     <link rel="stylesheet" type="text/css" href="gp.css">
+    <link rel="stylesheet" type="text/css" href="loader.css">
+    <script type="text/javascript" src="jquery-1.6.min.js"></script>
 
    <style type="text/css">
 
@@ -20,6 +22,11 @@
 
 </head>
 <body>
+    <!-- Preloader -->
+        <div id="preloader">
+            <div id="status">&nbsp;</div>
+        </div>
+    <!-- Preloader -->
 
     <div class="package-header">
     <h3>Banglalink 2G</h3>
@@ -107,6 +114,15 @@
 
     </tbody>
     </table>
-
+    <!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+    //]]>
+</script>
 </body>
 </html>

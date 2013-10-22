@@ -6,9 +6,16 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.css">
     <link rel="stylesheet" type="text/css" href="table.css">
+    <link rel="stylesheet" type="text/css" href="loader.css">
+    <script type="text/javascript" src="jquery-1.6.min.js"></script>
 
 </head>
 <body>
+    <!-- Preloader -->
+        <div id="preloader">
+            <div id="status">&nbsp;</div>
+        </div>
+    <!-- Preloader -->
 
     <div class="package-header">
     <h3>Zoom Ultra</h3>
@@ -17,10 +24,20 @@
     </div>
     <div style="padding-top:25%; margin:0 auto;">
     <a style="text-decoration:none;" href="ultra-pre.html"><button style="padding: 10%; font-size: 200%;" type="button" class="btn btn-success btn-lg btn-block">Ultra Prepaid</button></a> </br> </br>
-    <a style="text-decoration:none;" href="ultra-post.html"><button style="padding: 10%; font-size: 200%; type="button" class="btn btn-info btn-lg btn-block">Ultra Postpaid</button></a>
+    <a style="text-decoration:none;" href="ultra-post.html"><button style="padding: 10%; font-size: 200%;" type="button" class="btn btn-info btn-lg btn-block">Ultra Postpaid</button></a>
 
     </div>
-    <div><img style="display: block; margin-left: auto; margin-right: auto" src="zoom-ultra.jpg"></div>
 
+    <div><img style="display: block; margin-left: auto; margin-right: auto" src="zoom-ultra.jpg"></div>
+    <!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+    //]]>
+</script>
 </body>
 </html>
