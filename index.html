@@ -41,6 +41,7 @@
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/add2home.js" charset="utf-8"></script><!-- Iphone Bubble  -->
 <!-- / Javascripts -->
+
 </head>
 
 <body>
@@ -50,35 +51,6 @@
         </div>
     <!-- Preloader -->
 
-    <!-- Exit Button -->
-        <div id="exit" data-role="page"> </div>
-
-        <script type="text/javascript">
-                    document.addEventListener("backbutton", function() {
-                if ( $('.ui-page-active').attr('id') == 'exit') {
-                    exitAppPopup();
-                } else {
-                    history.back();            
-                }
-            }, false);
-                    
-
-           function exitAppPopup() {
-        navigator.notification.confirm(
-              'Exit 3G info?'
-            , function(button) {
-                  if (button == 2) {
-                      navigator.app.exitApp();
-                  }
-              }
-            , 'Exit'
-            , 'No,Yes'
-        );  
-        return false;
-    }
-        </script>
-
-            <!-- Exit Button -->
 
 <!-- Landscpae Mode Container -->
 <div class="container-landscape">Please turn your mobile device to portrait mode for best view this App.</div>
@@ -133,16 +105,29 @@
         <!-- / Leon Main Menu -->
     </div>
     <!-- / Content -->
+	
+	
+	<!-- Exit from App-->
+    <script type="text/javascript" charset="utf-8">
+                    function exitFromApp()
+             {
+                navigator.device.exitApp(); 
+             }
+	</script>
+	<!-- Exit from App-->
 
     <!-- Footer -->
     <div id="footer">
         <div align="center" class="footer-content">
         	<img src="assets/images/codetic.png"/> <p> A <a href="http://www.codetic.net">Codetic </a>Production!</p>
+            <div class="switch"><a href="#" onclick="exitFromApp();"><img src="assets/images/icons/exit.png"></a></div>
         </div>
-    </div>
-    <!-- / Footer -->
 
+          </div>
+
+    <!-- / Footer -->
 </div>
+
 <!-- / Main Container -->
 
 <!-- Touch hide JS -->

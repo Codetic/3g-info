@@ -450,4 +450,7 @@ FOOTER
 #footer{height:50px; width:100%; left:0px; bottom: 0px; position:fixed; background:#fff;}
 #footer p{padding:16px; margin:0 auto; text-align:left;}
 .footer-content{zoom:0; width:95%; margin: 0 auto;}
-.footer-content img{   float: left; margin-left: 30%;  padding-right: 5px; width: 50px;}
+.footer-content img{   float: left; margin-left: 25%;  padding-right: 5px; width: 50px;}
+
+.switch{position: absolute; bottom: 1%; right: 1%}
+.switch img {width: 50px;}
