@@ -453,4 +453,4 @@ FOOTER
 .footer-content img{   float: left; margin-left: 25%;  padding-right: 5px; width: 50px;}
 
 .switch{position: absolute; bottom: 1%; right: 1%}
-.switch img {width: 50px;}
+.switch img {width: 50px;padding-right: 10px;}
