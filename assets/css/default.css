@@ -64,7 +64,7 @@ CSS Document
 GENERAL LAYOUT
 ---------------------------------------------------*/
 *{margin:0;}
-body{background-image:url(../images/backgrounds/pixel.png); background-repeat:repeat; font-size:12px; font-family:'Open Sans',sans-serif; line-height:20px; font-smooth:always;}
+body{background-image:url(../images/backgrounds/pixel.png); background-repeat:repeat; font-size:12px; font-family:'Open Sans',sans-serif; line-height:20px; font-smooth:always; overflow:hidden;}
 
 /* If you want to change font please change code below to font name */
 a{font-family:'Open Sans',sans-serif; font-size:12px; font-smooth:always;}
