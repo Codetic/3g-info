@@ -2,8 +2,8 @@
 MAIN CONTAINER ROTATION CONFIG
 ------------------------------------------------*/
 @media screen and (orientation:landscape){
-	.container {display: block;}
-	.container-landscape {display: none;}
+	.container {display: none;}
+	.container-landscape {display: block;}
 	}
 	
 @media screen and (orientation:portrait){
